@@ -15,7 +15,7 @@ The file starts off with 8 bytes of file header
 * 0x04: Unknown
 
 
-Then the rest of the file is divided into chunks with 8-byte headers followed by data sections. The amount of chunks depend on the game.
+Then the rest of the file is divided into chunks with an 8-byte header followed by a data section. The amount of chunks depend on the game.
 
 --Start of chunk--
 * 0x00: Chunk length
