@@ -5,7 +5,7 @@ When extracting savegames from Ratchet & Clank (ps2) you get save.bin files. If 
 Figured I'd do a section with more info on how this was made in case somone wants to do this for another game :)
  
  ### Methodology 
-Figured out how this all worked by opening the game in an emulator, and looking for the save data in cheat engine. Upon finding it I set a breakpoint at the data, and pressed save in-game. Then I stepped through the assembly code until I found the pattern. After some converting, and messing around, I ended up with this.
+Figured out how this all worked by opening the game in an emulator, and looking for the save data in cheat engine. Upon finding it I used the "Find out what accesses this address" feauture, and pressed save in-game. That enabled me to open the area of the code that affects the save in a dissasembler. Then I simply set a breakpoint in this code, and again pressed save in-game. I was then able to step through the code and figure out a pattern. After some converting, and messing around, I ended up with this.
 
 ### Breakdown of the save.bin file
 The file starts off with 8 bytes of file header
